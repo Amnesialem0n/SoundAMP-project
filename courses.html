@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Courses - SoundAMP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo-wrapper">
+                <img src="Images/bestguitar.png" alt="Logo">
+                <h1 class="title">SoundAMP</h1>
+            </a>
+
+            <!-- Hamburger menu -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigatie -->
+            <nav class="nav" id="navMenu">
+                <a href="Events.html">Events</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+                <br>
+            </nav>
+            <br>
+        </div>
+    </header>
+
+    <main class="content">
+        <h2>All Courses</h2>
+
+        <div class="course-container">
+            <!-- Course 1: -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="Images/history.jpg" alt="Electric Guitar">
+                    <div class="card-tag">Bestseller</div>
+                </div>
+                <div class="card-content">
+                    <h3>Rock Lead Mastery</h3>
+                    <p class="course-meta"><i class="fa-solid fa-clock"></i> 12 Weeks | Advanced</p>
+                    <p>Master the techniques of rock legends. From high-speed shredding to soul-stirring solos and
+                        advanced theory.</p>
+                    <button class="btn-card">Start Learning</button>
+                </div>
+            </div>
+
+            <!-- Course 2: -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="Images/drummer2.jpg" alt="Studio Production">
+                </div>
+                <div class="card-content">
+                    <h3>Modern Music Production</h3>
+                    <p class="course-meta"><i class="fa-solid fa-desktop"></i> 8 Weeks | Beginners</p>
+                    <p>Learn to mix and master your own tracks in Ableton or Logic Pro. From raw beats to radio-ready
+                        hits.</p>
+                    <button class="btn-card">View Details</button>
+                </div>
+            </div>
+
+            <!-- Course 3: -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="Images/growl.jpg" alt="Vocal Class">
+                </div>
+                <div class="card-content">
+                    <h3>Elite Vocal Performance</h3>
+                    <p class="course-meta"><i class="fa-solid fa-microphone"></i> 10 Sessions | All Levels</p>
+                    <p>Expand your vocal range and conquer the stage with guidance from world-class professional
+                        coaches.</p>
+                    <button class="btn-card">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ======================
+         SCRIPTS
+    ====================== -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Hamburger menu toggle -->
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+            toggle.classList.toggle("active");
+        });
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>SoundAMP</h3>
+                <p>The ultimate music experience</p>
+            </div>
+
+            <div class="footer-right">
+                <h4>Follow us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="fa-brands fa-facebook-f"></a>
+                    <a href="https://instagram.com" target="_blank" class="fa-brands fa-instagram"></a>
+                    <a href="https://x.com" target="_blank" class="fa-brands fa-x-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 SoundAMP. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
